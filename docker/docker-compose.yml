@@ -1,0 +1,12 @@
+version: '3.1'
+volumes:
+  m001_data:
+services:
+  mongodb:
+    container_name: mongodb-basics
+    image: mongo
+    volumes:
+      - m001_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: mongo
