@@ -32,8 +32,7 @@ Now run the following command to connect to the MongoDB Basics class Atlas clust
 
 ```bash
 $ docker exec -it [REPLACE_WITH_CONTAINER_ID] mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,cluster0-shard-00-01-jxeqq.mongodb.net:27017,cluste
-r0-shard-00-02-jxeqq.mongodb.net:27017/test?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl --username m001-student --password
- m001-mongodb-basics
+r0-shard-00-02-jxeqq.mongodb.net:27017/test?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl --username m001-student --password m001-mongodb-basics
  ```
 
 ### Connecting to my class Atlas clustes
