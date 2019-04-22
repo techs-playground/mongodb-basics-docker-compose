@@ -47,7 +47,7 @@ $ docker exec -it [REPLACE_WITH_CONTAINER_ID] mongo "mongodb+srv://sandbox-4cvi6
 
  ### Loading provided dataset to the my Atlas cluster
 
-After connect to my Atlas cluster, run the following command from the mongo shell to load the dataset:
+After connect to my Atlas cluster, run the following command from the mongo shell to load the ```movieDetails``` dataset:
 
 ```bash
 MongoDB Enterprise Sandbox-shard-0:PRIMARY> load("loadMovieDetailsDataset.js")
@@ -61,3 +61,9 @@ MongoDB Enterprise Sandbox-shard-0:PRIMARY> use video
 MongoDB Enterprise Sandbox-shard-0:PRIMARY> show collections
 MongoDB Enterprise Sandbox-shard-0:PRIMARY> db.movieDetails.find().pretty()
 ```
+
+When playing around with the ```delete``` CRUD operation, use the following command to load the ```reviews``` dataset:
+
+```bash
+$ docker exec -it [REPLACE_WITH_CONTAINER_ID] mongo "mongodb+srv://sandbox-4cvi6.mongodb.net/video" --username m001-student --password [REPLACE_WITH_PASSWORD] loadReviewsDataset.js
+ ```

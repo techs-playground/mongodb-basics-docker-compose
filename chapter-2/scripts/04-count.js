@@ -1,0 +1,1 @@
+db.movieDetails.find( { "awards.wins": 2, "awards.nominations": 2 }).count();

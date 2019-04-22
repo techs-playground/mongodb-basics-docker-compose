@@ -1,0 +1,1 @@
+db.movieDetails.find().pretty();
